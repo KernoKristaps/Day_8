@@ -12,6 +12,7 @@ namespace Day_8
         {
             Masivs();
             JaunaZvaigzne();
+            Uzdevums();
 
             Console.ReadLine();
         }
@@ -43,6 +44,28 @@ namespace Day_8
             }
           
         }
-      
+        static void Uzdevums()
+        {
+            
+            string[] ievade = new string[5];
+            int[] izvade = new int[5];
+           
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("\n" + "Ievadiet " + i + " vertiba");
+                ievade[i] = Console.ReadLine();
+                izvade[i] = Convert.ToInt32(ievade[i]);
+                
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("\n" + izvade[i]);
+
+                Console.WriteLine(ievade[i] + "+" );
+            }
+        }
+        //izvade[i] + "=" + ievade[i] + izvade[i]
+
     }
 }
